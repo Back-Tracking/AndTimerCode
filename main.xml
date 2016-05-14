@@ -1,0 +1,81 @@
+Enter file contents here
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<TableLayout
+		android:layout_margin="10dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center">
+	    <TableRow android:gravity="center">
+			<ImageView android:id="@+id/M1"
+				android:scaleType="fitCenter"
+				android:layout_width="60dp"
+				android:layout_height="75dp"
+				android:maxWidth="40dp"
+				android:maxHeight="50dp"
+				android:src="@drawable/zero"
+			/>
+			<ImageView android:id="@+id/M2"
+				android:scaleType="fitCenter"
+				android:layout_width="60dp"
+				android:layout_height="75dp"
+				android:maxWidth="40dp"
+				android:maxHeight="50dp"
+				android:src="@drawable/zero"
+			/>
+			<ImageView 
+				android:scaleType="fitCenter"
+				android:layout_width="40dp"
+				android:layout_height="75dp"
+				android:maxWidth="60dp"
+				android:maxHeight="75dp"
+				android:src="@drawable/colon" 
+			/>
+			<ImageView android:id="@+id/S1"
+				android:scaleType="fitCenter"
+				android:layout_width="60dp"
+				android:layout_height="75dp"
+				android:maxWidth="40dp"
+				android:maxHeight="50dp"
+				android:src="@drawable/zero"
+			/>
+			<ImageView android:id="@+id/S2"			
+				android:scaleType="fitCenter"
+				android:layout_width="60dp"
+				android:layout_height="75dp"
+				android:maxWidth="40dp"
+				android:maxHeight="50dp"
+				android:src="@drawable/zero"
+			/>
+		</TableRow>
+	 </TableLayout> 
+	  <LinearLayout
+		android:layout_margin="10dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center">
+			<Button 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:layout_marginRight="30px"
+				android:layout_weight="1"
+				android:id="@+id/SPButton"
+				android:text="Start"
+			/>
+			
+			<Button
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:layout_marginLeft="30px"
+				android:layout_weight="1"
+				android:id="@+id/MSButton"
+				android:text="설정!"
+			/>
+	 </LinearLayout>
+</LinearLayout>

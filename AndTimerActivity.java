@@ -1,4 +1,3 @@
-Enter file contents here
 package com.AT;
 
 import android.app.Activity;
@@ -32,13 +31,13 @@ public class AndTimerActivity extends Activity implements OnClickListener {
 		AndRun => Thread의 작동/비작동을 구분하는 변수
 		AlarmRun => 카운트가 끝났을때 Start전환/다이얼로그출력 을 시행하기위한 변수
 	*/
-	public int defalut = 10;								 //초기값,환경설정에서 바꿀 있을때를 가정해 public으로 설정
+	public int defalut = 10;				 //초기값,환경설정에서 바꿀 있을때를 가정해 public으로 설정
 	int M1_Count = 0,M2_Count = 0,S1_Count = 0,S2_Count = 0; //카운트
-	int M1_Dis = 0,M2_Dis = 0,S1_Dis = 0,S2_Dis = 0; 		 //다이얼로그용
-	int Minute = 0,Second = 0;								 //카운트에서 값을받아 집어넣기위한 변수
-	int Min_Edit = 0,Sec_Edit = 0; 							 //설정에서 +,-의 영향을 받는값
-	int ClickCount = 0;										 //ALL 카운트 0일때 하위단계 실행 방지
-	int sndID;												 //다이얼로그 출력할때 소리 출력용
+	int M1_Dis = 0,M2_Dis = 0,S1_Dis = 0,S2_Dis = 0; 	 //다이얼로그용
+	int Minute = 0,Second = 0;				 //카운트에서 값을받아 집어넣기위한 변수
+	int Min_Edit = 0,Sec_Edit = 0; 				 //설정에서 +,-의 영향을 받는값
+	int ClickCount = 0;					 //ALL 카운트 0일때 하위단계 실행 방지
+	int sndID;						 //다이얼로그 출력할때 소리 출력용
 	SoundPool sndpl;
 	Thread th2 = new Thread(new TimeThread());//Thread;
 	AlertDialog.Builder Al_Ti = null;

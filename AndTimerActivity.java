@@ -229,6 +229,8 @@ public class AndTimerActivity extends Activity implements OnClickListener {
 				}
 			});
 			
+			System.out.println("test");
+
 			bulider = new AlertDialog.Builder(Tcontext);
 			bulider.setView(layout);
 			dialog = bulider.create(); //bulider.create()후에 구성요소 생성을 할수있다.
